@@ -1,0 +1,10 @@
+{
+  "name":"My Temperature Data in JSON",
+  "date":"2020/07/14",
+  "temperature":[
+    33.2,
+    25.1,
+    30.5,
+    22.0
+  ]
+ }
