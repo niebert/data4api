@@ -16,3 +16,7 @@ The folder `r_code/` contains R scripts that can be used within R/RStudio, in Kn
 ### Data - Demo Files
 The data contains demo data with different files types for testing.
 * `json_demo.json` contains a JSON file for testing data retrieval https://niebert.github.io/data/json_demo.json - this URL can be used as test to emulated a database query for specific data. With the R scripts provided in folder `r_code/`. The R-scripts use the GitHub URL to the JSON for testing. Change the URL to a real database for accessible Open Data for expanding your R-scripts for specific data analysis.
+
+## Tools
+* [JSON2Schema](https://niehausbert.gitlab.io/JSON2Schema) create a JSON editor from a defined JSON in 5min as [AppLSAC](https://en.wikiversity.org/wiki/AppLSAC)
+
