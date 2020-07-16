@@ -6,7 +6,8 @@ This repository was establish during the [COVID-19 pandemic](https://en.wikivers
 
 ## Test Usage
 If you want to perform a test with your R-script to fetch a JSON record from a database API is makes sense to test the programming code if it parses a JSON correctly.
-* [**Demo Link for Emulation of Database Query**](https://niebert.githu.io/data4api) over Web for testing.
+* [**Demo Link for Emulation of Database Query**](https://niebert.github.io/data4api) over Web for testing.
+
 The tests encapsule debugging to the processing of a JSON. Otherwise you must distinguish if the API call was incorrect and the provided JSON could processed due to the query syntax or the parsing and processing in the R script was not working. The repository provides a correct JSON via a HTTP request and therefore an error can clearly allocated on the scripting of the parser.
 
 ## Folders
