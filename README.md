@@ -10,6 +10,22 @@ If you want to perform a test with your R-script to fetch a JSON record from a d
 
 The tests encapsule debugging to the processing of a JSON. Otherwise you must distinguish if the API call was incorrect and the provided JSON could processed due to the query syntax or the parsing and processing in the R script was not working. The repository provides a correct JSON via a HTTP request and therefore an error can clearly allocated on the scripting of the parser.
 
+## R-Script to Fetch Data form API
+This is the example for R code with the example URL to a JSON data in this repository. You can use this code also as KnitR code chunk.
+
+```R
+library(rjson)
+url <- "https://niebert.github.io/data4api/data/json_demo.json"
+raw_data_json <- scan(url, "", sep="\n")
+raw_data_json
+my_dataframe <- fromJSON(paste(raw_data_json, collapse = ""))
+my_dataframe
+```
+The code runs out of the box in your R-code, Shiny-WebApp or KnitR code chunk. After testing adapt the URL to your API with the appropriate parameters. The current URL is just for testing the basic functionality of the R code. The JSON is static and just for demo purpose.
+
+## Wikiversity
+This repository is created in support for the [Wikiversity learning resource about KniR](https://en.wikiversity.org/wiki/KnitR).
+
 ## Folders
 The following folders are providing tools for data retrieval on the Operating System level or on the application level (e.g. in [Open Source R](https://en.wikipedia.org/wiki/R_(programming_language)), [GNU Octave](https://www.gnu.org/software/octave/), [Shiny Web-Apps with R Code](https://shiny.rstudio.com/gallery/), [KnitR](https://en.wikiversity.org/wiki/KnitR), ...
 
